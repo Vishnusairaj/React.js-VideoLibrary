@@ -42,6 +42,7 @@ export function EditVideo(){
         },
         onSubmit:(video)=>{
             axios.put(`http://127.0.0.1:5000/edit-videos/${video.VideoId}`,video)
+           
             .then(()=>{
                 alert('Video Updates');
                 navigate('/user-dash');
